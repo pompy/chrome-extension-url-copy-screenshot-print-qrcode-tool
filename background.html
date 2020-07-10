@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>url copy</title>
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="qrcode.min.js"></script>
+	<style>
+	#container {
+  width: 250px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid;
+  display:none;
+}
+</style>
+</head>
+<body>
+<div id="notfound" ><h3 align="center" style="color:red"> Please Load Webpage</h2></div>
+<div id="main" >
+<center>
+	<h3 align="center" style="color:red">Url Already Copied To Clipboard</h2>
+	
+	<h3 align="center">Scan a QRCode</h3>
+	<div id="qrcode" style="height:228px;width:228px;"></div>
+	
+	<h3 align="center">Window Operations</h3>
+	<a id="urlnew" target="about:blank" href='#'>New Tab</a>&nbsp;&nbsp;
+	<a id="urlincognito" href='#'>Incognito</a><br/>
+	
+	<h3 align="center">Share</h3>
+	<a  id="urltwitter" href="#" rel="noopener" target="_blank">Twitter</a>&nbsp;&nbsp;
+	<a id="urlfacebook" href="#" rel="noopener" target="_blank">Facebook</a>&nbsp;&nbsp;
+	<a id="urllinkedin" href="#" rel="noopener" target="_blank">Linkedin</a><br/>
+	<a id="urlgoogleplus" href="#" rel="noopener" target="_blank">Google+</a>&nbsp;&nbsp;
+    <a id="urlwhatsapp"  href="#" rel="noopener" target="_blank" data-action="share/whatsapp/share">Whatsapp</a>&nbsp;&nbsp;
+	<a id="urlgmail" href="#" rel="noopener" target="_blank">Gmail</a><br/>
+
+	<h3 align="center">Tools</h3>&nbsp;&nbsp;
+	<a  id="printpage" href="#" >Print</a>&nbsp;&nbsp;
+	<a  id="bookmarkpage" href="#" >Bookmark</a>&nbsp;&nbsp;
+	<a  id="whois" href="#" rel="noopener" target="_blank">Whois</a>
+	<br/>
+	<a  id="saveasmhtml" href="#" >Save (Rename extension as .mhtml)</a><br/>
+	
+	<a  id="capturescreen" href="#" >Capture Screen & Color Hex Code</a><br/><br/>
+		<div id="instructions" style="display:none">
+	<h5 style="color:red">Hover & Click over image to get Color Hex.<br/>You may zoom the browser and then take more accurate Hex codes.<br/>Also screenshot will be downloaded automatically.</h5>
+	</div>
+	<div id="container">
+	<canvas id="screen" style="display:none"  ></canvas>
+	</div>
+
+<br/>
+	<div id="canvasdata" style="width:200px;height:50px;display:none;">
+	
+		<div id="status" style="float:left;width:50px;height:50px;">
+	</div>
+		<div id="color" style="float:left;width:45px;height:45px;border:solid 1px black">
+	</div>
+		<div id="clickstatus" style="float:left;width:50px;height:50px">
+	</div>
+	<div id="clickcolor" style="float:left;width:45px;height:45px;border:solid 1px black">
+	</div>
+	
+	</div>
+
+	<!--
+	
+	<canvas id="screen" width="1920" height="1080" style="display:none"></canvas>
+	-->
+	</center>
+	</div>
+</body>
+</html>

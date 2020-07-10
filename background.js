@@ -1,0 +1,1 @@
+// background.js//for future enhancements//somdutt ganguly//tosomdutt@gmail.comchrome.runtime.onMessage.addListener(  function(request, sender, sendResponse) {    if( request.message === "future" ) {      myurl = "http://" + request.url;      chrome.tabs.create({"url": myurl, "active": false});    }  });
