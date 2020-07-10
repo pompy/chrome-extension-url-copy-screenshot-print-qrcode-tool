@@ -9,3 +9,5 @@ Chrome extension to do the following
 * Whois the url
 * Save the page in mhtml 
 * Capture the screen and get color code (hex code)
+This is how it looks
+https://github.com/pompy/chrome-extension-url-copy-screenshot-print-qrcode-tool/blob/master/chrome-tool.png
